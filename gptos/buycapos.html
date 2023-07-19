@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Buy a CAPOS Product Key</title>
+  <style>
+    .key-container {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Buy a CAPOS Product Key</h1>
+  <p>This is only valid for CapOS 1.00!</p>
+  <button onclick="generateKey()">BUY</button>
+
+  <div class="key-container">
+    <span id="product-key"></span>
+  </div>
+
+  <script>
+    function generateKey() {
+      var validKeys = ["CAPOS-52-UI-HOME", "CAPOS-20-ER-HOME", "CAPOS-560-YTU-PRO", "CAPOS-562-YTI-PRO", "CAPOS-01-HJ-HOME", "CAPOS-00-XA-HOME"];
+      var key = validKeys[Math.floor(Math.random() * validKeys.length)];
+      var keyElement = document.getElementById("product-key");
+      keyElement.textContent = "Your product key: " + key;
+    }
+  </script>
+</body>
+</html>
